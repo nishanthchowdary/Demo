@@ -1,4 +1,5 @@
 package com.example.com.demo;
+# "First code to check builds"
 # started now
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

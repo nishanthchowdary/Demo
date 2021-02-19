@@ -5,10 +5,14 @@ pipeline{
    }
     stages{
        stage('gitclone'){
+          steps{
          git 'https://github.com/nishanthchowdary/Demo.git'
+          }
        }  
        stage('build'){
+          steps{
           sh 'mvn clean package'
+           }
        }
     } 
 }

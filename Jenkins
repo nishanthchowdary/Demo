@@ -1,7 +1,7 @@
 pipeline{
   agent any
     stages{
-	  stage('git clone'{
+	  stage('git clone'){
 	    steps{
 		git 'https://github.com/nishanthchowdary/Demo.git'
 		}
@@ -10,6 +10,7 @@ pipeline{
 	   tools{
 	   maven 'maven'
 	   }
+	  } 
 	   steps{
 	   sh 'mvn clean package'
 	   }
